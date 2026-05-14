@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Registration Form</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Register Form</h1>
+
+        <form id="form">
+
+            <!-- NAME -->
+
+            <div class="input-box">
+
+                <input type="text"
+                id="name"
+                placeholder="Enter Your Name">
+
+                <small id="nameError"></small>
+
+            </div>
+
+
+
+            <!-- EMAIL -->
+
+            <div class="input-box">
+
+                <input type="email"
+                id="email"
+                placeholder="Enter Your Email">
+
+                <small id="emailError"></small>
+
+            </div>
+
+
+
+            <!-- PASSWORD -->
+
+            <div class="input-box">
+
+                <input type="password"
+                id="password"
+                placeholder="Enter Password">
+
+                <span class="eye"
+                onclick="togglePassword()">👁️</span>
+
+                <small id="passwordError"></small>
+
+                <p id="strength"></p>
+
+            </div>
+
+
+
+            <!-- BUTTON -->
+
+            <button type="submit"
+            id="submit"
+            disabled>
+
+                Submit
+
+            </button>
+
+
+
+            <!-- SUCCESS MESSAGE -->
+
+            <p class="success"
+            id="successMsg">
+
+                Registration Successful ✅
+
+            </p>
+
+        </form>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
